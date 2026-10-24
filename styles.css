@@ -1,21 +1,21 @@
 /* ---------- Tokens ---------- */
 
 :root {
-    --soot: #1c1a15;
-    --soot-raised: #24211b;
-    --soot-rule: #3a362d;
-    --plaster: #e6dfcc;
-    --dust: #a39b86;
-    --ochre: #c9a24a;
+    --night: #121a2b;
+    --night-raised: #1b2538;
+    --night-rule: #2c3850;
+    --paper: #eceef0;
+    --mist: #9aa5b8;
+    --cobalt-light: #8eaeea;
 
-    --wall: #e8e5de;
-    --wall-mat: #dcd8cf;
-    --wall-rule: #c9c4b8;
-    --ink: #1c1a15;
-    --ink-muted: #5c5649;
-    --ochre-deep: #7a5a12;
+    --stone: #e9ebec;
+    --stone-mat: #dce0e4;
+    --stone-rule: #c5ccd5;
+    --ink: #121a2b;
+    --ink-muted: #4e5a6e;
+    --cobalt: #2a4fa0;
 
-    --red-dot: #c0392b;
+    --red-dot: #d0402b;
 
     --display: "Archivo", "Arial Narrow", sans-serif;
     --serif: "Newsreader", Georgia, serif;
@@ -32,22 +32,22 @@
 
 :root,
 .tone-dark {
-    --bg: var(--soot);
-    --mat: var(--soot-raised);
-    --fg: var(--plaster);
-    --muted: var(--dust);
-    --rule: var(--soot-rule);
-    --accent: var(--ochre);
+    --bg: var(--night);
+    --mat: var(--night-raised);
+    --fg: var(--paper);
+    --muted: var(--mist);
+    --rule: var(--night-rule);
+    --accent: var(--cobalt-light);
     color-scheme: dark;
 }
 
 .tone-wall {
-    --bg: var(--wall);
-    --mat: var(--wall-mat);
+    --bg: var(--stone);
+    --mat: var(--stone-mat);
     --fg: var(--ink);
     --muted: var(--ink-muted);
-    --rule: var(--wall-rule);
-    --accent: var(--ochre-deep);
+    --rule: var(--stone-rule);
+    --accent: var(--cobalt);
     color-scheme: light;
 }
 
@@ -1064,12 +1064,12 @@ p {
     margin: 0;
     padding: 0;
     border: 0;
-    background: var(--soot);
-    color: var(--plaster);
-    --fg: var(--plaster);
-    --muted: var(--dust);
-    --rule: var(--soot-rule);
-    --accent: var(--ochre);
+    background: var(--night);
+    color: var(--paper);
+    --fg: var(--paper);
+    --muted: var(--mist);
+    --rule: var(--night-rule);
+    --accent: var(--cobalt-light);
 }
 
 .viewer[open] {
@@ -1079,7 +1079,7 @@ p {
 }
 
 .viewer::backdrop {
-    background: var(--soot);
+    background: var(--night);
 }
 
 @keyframes viewer-in {
@@ -1159,7 +1159,7 @@ p {
     padding: 0.7rem 1rem;
     border: 1px solid var(--rule);
     background: transparent;
-    color: var(--plaster);
+    color: var(--paper);
     font-family: var(--display);
     font-stretch: 80%;
     font-size: 1rem;
@@ -1167,7 +1167,7 @@ p {
 }
 
 .viewer button:hover {
-    border-color: var(--plaster);
+    border-color: var(--paper);
 }
 
 /* ---------- CV page ---------- */
