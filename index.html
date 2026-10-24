@@ -4,271 +4,333 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fariba Rahnavard, painter</title>
-    <meta name="description" content="Fariba Rahnavard is an Iranian painter working in collage and abstract expressionism. Series, exhibitions, writing and enquiries.">
+    <meta name="description" content="Fariba Rahnavard is an Iranian painter working in collage and oil. Series, works, exhibitions, writing and a contact form.">
     <meta property="og:title" content="Fariba Rahnavard, painter">
-    <meta property="og:description" content="Collage and abstract expressionism on history, violence, disaster and hope.">
+    <meta property="og:description" content="Collage and oil on history, violence, disaster and the hope that outlasts them.">
     <meta property="og:image" content="img/2.jpg">
-    <meta name="theme-color" content="#121a2b">
+    <meta name="theme-color" content="#fbfaf7">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Vazirmatn:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400..800&display=swap">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-        <div class="header-inner wrap">
-            <a class="wordmark" href="index.html">Fariba Rahnavard</a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-            <nav class="site-nav" id="site-nav" aria-label="Main">
-                <ul>
-                    <li><a href="buying.html">Works</a></li>
-                    <li><a href="index.html#exhibitions">Exhibitions</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="port.html">CV &amp; writing</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu-panel" id="menu" aria-label="Main">
+        <ul>
+            <li><a href="buying.html">Works</a></li>
+            <li><a href="#series">Series</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#exhibitions">Exhibitions</a></li>
+            <li><a href="port.html">CV &amp; writing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main id="main">
-        <section class="hero wrap" aria-labelledby="hero-title">
-            <div class="hero-main">
-                <div class="hero-text">
-                    <h1 class="hero-name" id="hero-title"><span>Fariba</span> <span>Rahnavard</span></h1>
-                    <p class="hero-persian" lang="fa" dir="rtl">فریبا رهنورد</p>
-                    <p class="hero-intro">Iranian painter working in collage and oil. Her work deals with history, violence and disaster, and the hope that outlasts them.</p>
-                    <div class="actions">
-                        <a class="button" href="buying.html">View the works</a>
-                        <a class="text-link" href="#series">Explore the series</a>
+        <div class="stage">
+            <h1 class="corner-name" aria-label="Fariba Rahnavard, painter">
+                <span class="first" aria-hidden="true">Fariba</span>
+                <span class="second" aria-hidden="true">Rahnavard</span>
+            </h1>
+
+            <section class="hero" aria-label="Introduction">
+                <div class="hero-panel" data-ground="light">
+                    <div class="hero-copy" data-reveal>
+                        <p class="lead">An Iranian painter working in collage and oil. Her pictures deal with history, violence and disaster, and the hope that outlasts them.</p>
+                        <div class="actions">
+                            <a class="button" href="buying.html">View the works</a>
+                            <a class="link" href="#contact">Send a message</a>
+                        </div>
                     </div>
-                </div>
-
-                <figure class="strata">
-                    <div class="strata-frame">
-                        <div class="stratum"><img src="img/2.jpg" width="872" height="1280" alt="Disaster Never Rests: a hooded figure with a rifle stands over a sleeping child, above the ruins of a stepped brick tower." fetchpriority="high"></div>
-                        <div class="stratum" aria-hidden="true"><img src="img/2.jpg" width="872" height="1280" alt=""></div>
-                        <div class="stratum" aria-hidden="true"><img src="img/2.jpg" width="872" height="1280" alt=""></div>
-                    </div>
-                    <figcaption><cite>Disaster Never Rests</cite>, 2014. Collage, 21 × 30 in.</figcaption>
-                </figure>
-            </div>
-
-            <dl class="hero-facts">
-                <div>
-                    <dt>Born</dt>
-                    <dd>1984, Isfahan, Iran</dd>
-                </div>
-                <div>
-                    <dt>Medium</dt>
-                    <dd>Collage, oil and mixed media</dd>
-                </div>
-                <div>
-                    <dt>Exhibited in</dt>
-                    <dd>Italy, the United States, the United Kingdom, France, Greece, Turkey, Albania and Iran</dd>
-                </div>
-            </dl>
-        </section>
-
-        <section class="section statement wrap" aria-label="Artist statement">
-            <blockquote>
-                <p>“The darkness needs to be shown so that the light of hope can be recognized.”</p>
-                <footer class="ui"><a href="port.html#disaster-never-rests">Fariba Rahnavard, in conversation with Hamid Mazraea</a></footer>
-            </blockquote>
-        </section>
-
-        <section class="section tone-wall" id="series" aria-labelledby="series-title">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2 class="section-title" id="series-title">Series</h2>
-                    <p>Four bodies of work made between 2014 and 2017, built in layers of photograph, paint and paper.</p>
-                </div>
-
-                <div class="series-grid">
-                    <a class="series-card" href="buying.html?series=disaster-never-rests">
-                        <div class="mat"><img src="img-sell/sell-11.jpg" width="901" height="1280" loading="lazy" alt="A figure in a white headscarf covers their face, under a nest of dark wire and dripping black bands on green."></div>
-                        <h3>Disaster Never Rests</h3>
-                        <p>4 works, 2014–2017</p>
-                    </a>
-                    <a class="series-card" href="buying.html?series=anti-gravity">
-                        <div class="mat"><img src="img-sell/sell-3.jpg" width="920" height="1280" loading="lazy" alt="Black silhouettes of forks, knives and bottles hang over a table on pale paper."></div>
-                        <h3>Anti Gravity</h3>
-                        <p>4 works, 2016–2017</p>
-                    </a>
-                    <a class="series-card" href="buying.html?series=destruction">
-                        <div class="mat"><img src="img-sell/sell-10.jpg" width="879" height="1280" loading="lazy" alt="Dark horizontal bands frame hands at a table and silhouetted figures against a red sea."></div>
-                        <h3>Destruction</h3>
-                        <p>3 works, 2015–2017</p>
-                    </a>
-                    <a class="series-card" href="buying.html?series=history-goes-on">
-                        <div class="mat"><img src="img-sell/sell-8.jpg" width="1280" height="951" loading="lazy" alt="A dark red sun over a deep blue night and a line of rounded treetops."></div>
-                        <h3>History Goes On</h3>
-                        <p>1 work, 2016</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section wrap" aria-labelledby="featured-title">
-            <div class="featured">
-                <a class="featured-image" href="buying.html">
-                    <img src="img-sell/sell-1.jpg" width="1046" height="1280" loading="lazy" alt="For Money: ochre ruins of arches and towers dissolving into a scatter of black marks.">
-                </a>
-                <div>
-                    <h2 id="featured-title">For Money (Para Dinero)</h2>
-                    <p class="featured-note">The most recent work in the catalogue: ruined arches and towers in ochre wash, dissolving into a scatter of black marks.</p>
-                    <dl class="details">
-                        <dt>Year</dt>
-                        <dd>2022</dd>
-                        <dt>Medium</dt>
-                        <dd>Oil on canvas</dd>
-                        <dt>Size</dt>
-                        <dd>55 × 46 in (140 × 117 cm)</dd>
-                        <dt>Status</dt>
-                        <dd><span class="status-sold">Sold</span></dd>
-                    </dl>
-                    <a class="button" href="buying.html">Browse all works</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section tone-wall" id="about" aria-labelledby="about-title">
-            <div class="about wrap">
-                <figure class="about-images">
-                    <img class="portrait" src="img/photo_2024-08-16_12-58-16.jpg" width="980" height="1280" loading="lazy" alt="Black and white portrait of Fariba Rahnavard.">
-                    <img class="studio" src="img/photo_2024-08-16_12-58-14.jpg" width="960" height="1280" loading="lazy" alt="Fariba Rahnavard at her desk in the studio at night, paintings on the wall behind her.">
-                    <figcaption>Portrait, and at work in the studio.</figcaption>
-                </figure>
-
-                <div class="about-text">
-                    <h2 class="section-title" id="about-title">About</h2>
-                    <p class="lead">Fariba Rahnavard is a modern and contemporary Iranian painter, born in Isfahan in 1984 and raised in Tehran.</p>
-                    <p>She began painting professionally at eighteen and later studied painting at the Faculty of Art and Architecture of the Islamic Azad University, Central Tehran Branch, before completing a PhD in the history of art in Spain.</p>
-                    <p>Drawn to the tragedies of the modern world, she turned to abstract expressionism, a way of painting long tied to history, violence and catastrophe. She builds her images in layers of photograph, paint and paper, and counts Francis Bacon, Marina Abramović and René Magritte among her influences.</p>
-                    <p>Her work has been shown at international biennials and exhibitions, including the Florence Biennale and the Manhattan International Competition. She has taught painting since 2004.</p>
-
-                    <dl class="details">
-                        <dt>Education</dt>
-                        <dd>PhD, History of Art, Spain, 2021<br>MA, Painting, Islamic Azad University, 2019<br>BA, Painting, Islamic Azad University, 2016</dd>
-                        <dt>Galleries</dt>
-                        <dd>Matiz Gallery, Barcelona<br>Artunity Gallery<br>Port Gallery, on Artsy</dd>
-                        <dt>Award</dt>
-                        <dd>Creative Climate Awards, Human Impact Institute, New York, 2016</dd>
-                    </dl>
-
-                    <div class="actions">
-                        <a class="text-link" href="port.html#cv">Full CV</a>
-                        <a class="text-link" href="port.html#essays">Essays and interview</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section wrap" id="exhibitions" aria-labelledby="exhibitions-title">
-            <div class="section-head">
-                <h2 class="section-title" id="exhibitions-title">Exhibitions</h2>
-                <a class="text-link" href="port.html#cv">Full exhibition history</a>
-            </div>
-
-            <div class="posters">
-                <figure>
-                    <div class="mat"><img src="img/poster1.jpg" width="722" height="1041" loading="lazy" alt="Poster for Fariba Rahnavard’s painting exhibition at Gozaar Art Gallery, 2019, with a doubled black and white portrait of the artist."></div>
-                    <figcaption>Solo exhibition, Gozaar Gallery, Isfahan, 2019</figcaption>
-                </figure>
-                <figure>
-                    <div class="mat"><img src="img/poster2.jpg" width="741" height="1055" loading="lazy" alt="Poster for Disaster Never Rests, with the artist’s name in large red and blue Persian lettering."></div>
-                    <figcaption>Disaster Never Rests, exhibition poster</figcaption>
-                </figure>
-                <figure>
-                    <div class="mat"><img src="img/photo_2024-08-20_14-07-26%20(2).jpg" width="750" height="1051" loading="lazy" alt="Page from Kolaj Magazine featuring a collage by Fariba Rahnavard."></div>
-                    <figcaption>Featured in Kolaj Magazine, 2021</figcaption>
-                </figure>
-            </div>
-
-            <ol class="exhibition-list">
-                <li><span class="year">2020</span><span class="title">500th anniversary of Leonardo da Vinci’s death<span>Zhinus Gallery</span></span><span class="place"></span><span class="kind">Group</span></li>
-                <li><span class="year">2019</span><span class="title">Disaster Never Rests<span>Gozaar Gallery</span></span><span class="place">Isfahan</span><span class="kind">Solo</span></li>
-                <li><span class="year">2018</span><span class="title">Disaster Never Rests<span>4 Gallery</span></span><span class="place">Tehran</span><span class="kind">Solo</span></li>
-                <li><span class="year">2018</span><span class="title">Art Will Tell<span>7Art Gallery</span></span><span class="place">Istanbul</span><span class="kind">Group</span></li>
-                <li><span class="year">2017</span><span class="title">Anima Mundi<span>ITS Liquid International Biennial</span></span><span class="place">Venice</span><span class="kind">Biennial</span></li>
-                <li><span class="year">2017</span><span class="title">Group exhibition<span>Linda Farrell Gallery</span></span><span class="place">Paris</span><span class="kind">Group</span></li>
-                <li><span class="year">2017</span><span class="title">Selected Iranian painters<span>Art Zone 42</span></span><span class="place">Athens</span><span class="kind">Group</span></li>
-                <li><span class="year">2016</span><span class="title">Artrooms 2016<span>Independent contemporary artists</span></span><span class="place">London</span><span class="kind">Group</span></li>
-                <li><span class="year">2015</span><span class="title">International Art &amp; Police Biennale<span>Selected for admission</span></span><span class="place">Florence</span><span class="kind">Biennial</span></li>
-            </ol>
-        </section>
-
-        <section class="section tone-wall" aria-labelledby="writing-title">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2 class="section-title" id="writing-title">Writing</h2>
-                    <a class="text-link" href="port.html#essays">All essays</a>
-                </div>
-
-                <div class="press">
-                    <blockquote>
-                        <p>“Collage is a reflection of our era’s soul.”</p>
-                        <footer>
-                            <strong>Solmaz Naraghi</strong>
-                            Coexistence with Death, Zanan Emrooz
-                            <br><a class="text-link" href="port.html#coexistence-with-death">Read the essay<span class="visually-hidden">: Coexistence with Death</span></a>
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        <p>“It is by creating this atmosphere that Rahnavard invites her audience to rebel: an inner and semantic rebellion, to know who they are.”</p>
-                        <footer>
-                            <strong>Dr. Hossein Ardalani</strong>
-                            I Exist, but in Darkness
-                            <br><a class="text-link" href="port.html#i-exist-but-in-darkness">Read the essay<span class="visually-hidden">: I Exist, but in Darkness</span></a>
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        <p>“She is concerned with the world and its disastrous events in life and, despite its bitter incidents, she is hopeful of the human world.”</p>
-                        <footer>
-                            <strong>Hamid Mazraea</strong>
-                            Disaster Never Rests
-                            <br><a class="text-link" href="port.html#disaster-never-rests">Read the essay<span class="visually-hidden">: Disaster Never Rests</span></a>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <section class="section wrap" id="contact" aria-labelledby="contact-title">
-            <div class="contact">
-                <div>
-                    <h2 class="section-title" id="contact-title">Contact</h2>
-                    <p>For acquisitions, exhibitions, studio visits and press, write to the artist directly.</p>
-                </div>
-                <div>
-                    <a class="contact-email" href="mailto:faribarahnavard@gmail.com">faribarahnavard@<wbr>gmail.com</a>
-                    <ul class="contact-links ui">
-                        <li><a href="https://www.instagram.com/fariba_rahnavard/" target="_blank" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/fariba.rahnavardd" target="_blank" rel="noopener">Facebook</a></li>
-                        <li><a href="buying.html?available=1">Available works</a></li>
+                    <ul class="hero-links">
+                        <li><a href="#series">Series</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
                     </ul>
                 </div>
+
+                <figure class="strata" data-ground="dark">
+                    <div class="stratum"><img src="img/2.jpg" width="872" height="1280" alt="Disaster Never Rests: a hooded figure with a rifle stands over a sleeping child, above the ruins of a stepped brick tower." fetchpriority="high"></div>
+                    <div class="stratum" aria-hidden="true"><img src="img/2.jpg" width="872" height="1280" alt=""></div>
+                    <div class="stratum" aria-hidden="true"><img src="img/2.jpg" width="872" height="1280" alt=""></div>
+                    <figcaption>Disaster Never Rests, 2014. Move across it to shift the layers.</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="series section frame" id="series" aria-labelledby="series-title">
+            <div class="series-layout">
+                <div class="series-main">
+                    <div class="section-head" data-reveal>
+                        <h2 class="heading" id="series-title">Four series</h2>
+                        <p class="lead">Bodies of work made between 2014 and 2017, built in layers of photograph, paint and paper. Choose one to see its works.</p>
+                    </div>
+                    <ol class="series-list">
+                        <li class="is-active">
+                            <a href="buying.html?series=disaster-never-rests" data-preview="0">
+                                <img class="series-thumb" src="img-sell/sell-11.jpg" width="901" height="1280" loading="lazy" alt="">
+                                <h3 class="series-name">Disaster Never Rests</h3>
+                                <span class="series-meta">4 works, 2014–2017</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buying.html?series=anti-gravity" data-preview="1">
+                                <img class="series-thumb" src="img-sell/sell-3.jpg" width="920" height="1280" loading="lazy" alt="">
+                                <h3 class="series-name">Anti Gravity</h3>
+                                <span class="series-meta">4 works, 2016–2017</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buying.html?series=destruction" data-preview="2">
+                                <img class="series-thumb" src="img-sell/sell-10.jpg" width="879" height="1280" loading="lazy" alt="">
+                                <h3 class="series-name">Destruction</h3>
+                                <span class="series-meta">3 works, 2015–2017</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buying.html?series=history-goes-on" data-preview="3">
+                                <img class="series-thumb" src="img-sell/sell-8.jpg" width="1280" height="951" loading="lazy" alt="">
+                                <h3 class="series-name">History Goes On</h3>
+                                <span class="series-meta">1 work, 2016</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+
+                <figure class="series-preview">
+                    <div class="series-frame">
+                        <img class="is-active" src="img-sell/sell-11.jpg" width="901" height="1280" loading="lazy" alt="Disaster Never Rests: a figure in a white headscarf covers their face, under dripping black bands on green." data-caption="Disaster Never Rests, 2015. Collage.">
+                        <img src="img-sell/sell-3.jpg" width="920" height="1280" loading="lazy" alt="Anti Gravity: black silhouettes of forks, knives and bottles hang over a table on pale paper." data-caption="Anti Gravity, 2016. Collage.">
+                        <img src="img-sell/sell-10.jpg" width="879" height="1280" loading="lazy" alt="Destruction: dark bands frame hands at a table and figures against a red sea." data-caption="Destruction, 2015. Collage.">
+                        <img src="img-sell/sell-8.jpg" width="1280" height="951" loading="lazy" alt="History Goes On: a dark red sun over a deep blue night and a line of treetops." data-caption="History Goes On, 2016. Collage.">
+                    </div>
+                    <figcaption aria-live="polite">Disaster Never Rests, 2015. Collage.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section frame" aria-labelledby="catalogue-title">
+            <div class="catalogue-intro">
+                <div class="section-head" data-reveal>
+                    <h2 class="heading" id="catalogue-title">Thirteen works, four still available</h2>
+                    <p class="lead">Collages and paintings from 2014 to 2022, with sizes, years and what can still be bought.</p>
+                    <div class="actions"><a class="button button--accent" href="buying.html">Browse the catalogue</a></div>
+                </div>
+
+                <figure class="rotator">
+                    <button class="rotator-frame" type="button" aria-label="Show the next work">
+                        <img class="is-active" src="img-sell/sell-1.jpg" width="1046" height="1280" loading="lazy" alt="For Money: ochre ruins of arches and towers dissolving into black marks." data-caption="<strong>For Money (Para Dinero)</strong>, 2022. Oil on canvas. Sold.">
+                        <img src="img-sell/sell-10.jpg" width="879" height="1280" loading="lazy" alt="Destruction: dark bands frame hands at a table and figures against a red sea." data-caption="<strong>Destruction</strong>, 2015. Collage. Available.">
+                        <img src="img-sell/sell-6.jpg" width="941" height="1280" loading="lazy" alt="Anti Gravity: a lone ochre silhouette in the doorway of a weathered shopfront." data-caption="<strong>Anti Gravity</strong>, 2016. Collage. Sold.">
+                        <img src="img-sell/sell-13.jpg" width="891" height="1280" loading="lazy" alt="Anti Gravity: fish leap from deep blue water under a grey sky." data-caption="<strong>Anti Gravity</strong>, 2017. Collage. Available.">
+                        <img src="img-sell/sell-7.jpg" width="887" height="1280" loading="lazy" alt="Destruction: a stormy grey-green sky breaking into shards over dark water." data-caption="<strong>Destruction</strong>, 2017. Collage. Sold.">
+                        <img src="img-sell/sell-12.jpg" width="887" height="1280" loading="lazy" alt="Disaster Never Rests: a man holding red flowers in a dark, scratched room." data-caption="<strong>Disaster Never Rests</strong>, 2017. Collage. Available.">
+                        <img src="img-sell/sell-5.jpg" width="712" height="1024" loading="lazy" alt="Anti Gravity: children stand on crumbling ochre terraces beneath a passing train." data-caption="<strong>Anti Gravity</strong>, 2016. Collage. Sold.">
+                    </button>
+                    <figcaption aria-live="polite"><strong>For Money (Para Dinero)</strong>, 2022. Oil on canvas. Sold.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="about frame" id="about" aria-labelledby="about-title">
+            <div class="about-title">
+                <h2 id="about-title">About her</h2>
+                <p class="lead">Born in Isfahan in 1984, raised in Tehran, painting professionally since eighteen.</p>
+            </div>
+
+            <div class="about-items">
+                <article class="about-item" data-reveal>
+                    <img src="img/photo_2024-08-16_12-58-16.jpg" width="980" height="1280" loading="lazy" alt="Black and white portrait of Fariba Rahnavard.">
+                    <h3>Fariba Rahnavard</h3>
+                    <p class="small">Painter, PhD in the history of art</p>
+                    <p>She studied painting at the Islamic Azad University in Tehran, then turned to abstract expressionism, drawn to the tragedies of the modern world.</p>
+                </article>
+                <article class="about-item" data-reveal>
+                    <img src="img/poster2.jpg" width="741" height="1055" loading="lazy" alt="Exhibition poster for Disaster Never Rests, with the artist’s name in large red and blue lettering.">
+                    <h3>Disaster Never Rests</h3>
+                    <p class="small">Solo exhibitions, Tehran 2018 and Isfahan 2019</p>
+                    <p>She builds her images in layers of photograph, paint and paper, and counts Francis Bacon, Marina Abramović and René Magritte among her influences.</p>
+                </article>
+                <article class="about-item" data-reveal>
+                    <img src="img/poster1.jpg" width="722" height="1041" loading="lazy" alt="Poster for her painting exhibition at Gozaar Art Gallery, 2019, with a doubled portrait of the artist.">
+                    <h3>Gozaar Gallery, Isfahan</h3>
+                    <p class="small">Solo exhibition, April 2019</p>
+                    <p>Her work has been shown at international biennials and exhibitions, including the Florence Biennale and the Manhattan International Competition.</p>
+                </article>
+                <article class="about-item" data-reveal>
+                    <img src="img/photo_2024-08-20_14-07-26%20(2).jpg" width="750" height="1051" loading="lazy" alt="Page from Kolaj Magazine featuring a collage by Fariba Rahnavard.">
+                    <h3>Kolaj Magazine</h3>
+                    <p class="small">Featured artist, 2021</p>
+                    <p>Her collages have also been reviewed in ARTiculAction in London and selected by Lunch Ticket in Los Angeles. She has taught painting since 2004.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section frame" id="exhibitions" aria-labelledby="exhibitions-title">
+            <div class="exhibitions-layout">
+                <div class="section-head" data-reveal>
+                    <h2 class="heading" id="exhibitions-title">Exhibitions</h2>
+                    <p class="lead">Shown in ten cities since 2015: Florence, Venice, New York, London, Paris, Athens, Istanbul, Tirana, Tehran and Isfahan. <a class="link" href="port.html">Full CV and press</a></p>
+                </div>
+
+                <ol class="timeline">
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2020</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">500th anniversary of Leonardo da Vinci’s death</span><span class="show-place">Zhinus Gallery</span><span class="tag">Group</span></li>
+                        </ul>
+                    </li>
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2019</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">Disaster Never Rests</span><span class="show-place">Gozaar Gallery, Isfahan</span><span class="tag tag--solo">Solo</span></li>
+                            <li class="show"><span class="show-title">House Facing South</span><span class="show-place">Aknoon Art Gallery, Isfahan</span><span class="tag">Group</span></li>
+                        </ul>
+                    </li>
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2018</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">Disaster Never Rests</span><span class="show-place">4 Gallery, Tehran</span><span class="tag tag--solo">Solo</span></li>
+                            <li class="show"><span class="show-title">Art Will Tell</span><span class="show-place">7Art Gallery, Istanbul</span><span class="tag">Group</span></li>
+                        </ul>
+                    </li>
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2017</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">Anima Mundi, ITS Liquid International Biennial</span><span class="show-place">Venice</span><span class="tag">Biennial</span></li>
+                            <li class="show"><span class="show-title">Group exhibition</span><span class="show-place">Linda Farrell Gallery, Paris</span><span class="tag">Group</span></li>
+                            <li class="show"><span class="show-title">Selected Iranian painters</span><span class="show-place">Art Zone 42, Athens</span><span class="tag">Group</span></li>
+                            <li class="show"><span class="show-title">Iranian and Afghan Art</span><span class="show-place">National Museum, Tirana</span><span class="tag">Group</span></li>
+                        </ul>
+                    </li>
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2016</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">Artrooms 2016, independent contemporary artists</span><span class="show-place">London</span><span class="tag">Group</span></li>
+                        </ul>
+                    </li>
+                    <li class="year-group" data-reveal>
+                        <h3 class="year">2015</h3>
+                        <ul class="shows">
+                            <li class="show"><span class="show-title">International Art &amp; Police Biennale</span><span class="show-place">Florence</span><span class="tag">Biennial</span></li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="study" data-reveal>
+                    <div data-ground="dark">
+                        <h3>Education</h3>
+                        <ul>
+                            <li><span>PhD, History of Art<small>Spain</small></span><span>2021</span></li>
+                            <li><span>MA, Painting<small>Islamic Azad University, Tehran</small></span><span>2017–2019</span></li>
+                            <li><span>BA, Painting<small>Islamic Azad University, Tehran</small></span><span>2012–2016</span></li>
+                        </ul>
+                    </div>
+                    <div data-ground="dark">
+                        <h3>Award and teaching</h3>
+                        <ul>
+                            <li><span>Creative Climate Awards<small>Human Impact Institute, New York</small></span><span>2016</span></li>
+                            <li><span>Painting instructor<small>Private studio</small></span><span>since 2014</span></li>
+                            <li><span>Painting instructor<small>Arana School of Visual Arts, Isfahan</small></span><span>2010–2012</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section frame" aria-labelledby="writing-title">
+            <div class="quotes">
+                <div class="section-head">
+                    <h2 class="heading" id="writing-title">What critics wrote</h2>
+                </div>
+                <blockquote>
+                    <p>“Collage is a reflection of our era’s soul.”</p>
+                    <footer><strong>Solmaz Naraghi</strong>, Coexistence with Death <a class="link" href="port.html#coexistence-with-death">Read the essay<span class="visually-hidden">: Coexistence with Death</span></a></footer>
+                </blockquote>
+                <blockquote>
+                    <p>“It is by creating this atmosphere that Rahnavard invites her audience to rebel.”</p>
+                    <footer><strong>Dr. Hossein Ardalani</strong>, I Exist, but in Darkness <a class="link" href="port.html#i-exist-but-in-darkness">Read the essay<span class="visually-hidden">: I Exist, but in Darkness</span></a></footer>
+                </blockquote>
+                <blockquote>
+                    <p>“The darkness needs to be shown so that the light of hope can be recognized.”</p>
+                    <footer><strong>Fariba Rahnavard</strong>, in conversation with Hamid Mazraea <a class="link" href="port.html#disaster-never-rests">Read the interview<span class="visually-hidden">: Disaster Never Rests</span></a></footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section frame" id="contact" aria-labelledby="contact-title">
+            <div class="letter-inner">
+                <h2 class="heading" id="contact-title">Write to Fariba</h2>
+                <p class="lead">About buying a work, an exhibition, a studio visit or press. She replies by email.</p>
+
+                <form class="contact-form" data-access-key="YOUR_WEB3FORMS_ACCESS_KEY" novalidate>
+                    <fieldset class="topics">
+                        <legend>What is it about?</legend>
+                        <div class="topic-options">
+                            <label class="topic"><input type="radio" name="topic" value="Buying a work" checked><span>Buying a work</span></label>
+                            <label class="topic"><input type="radio" name="topic" value="An exhibition or project"><span>An exhibition</span></label>
+                            <label class="topic"><input type="radio" name="topic" value="Press"><span>Press</span></label>
+                            <label class="topic"><input type="radio" name="topic" value="Something else"><span>Something else</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="letter-row">
+                        <div class="field">
+                            <label for="name">Your name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Your email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <input class="honeypot" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="letter-send">
+                        <p class="form-status" role="status">Your message goes straight to her inbox.</p>
+                        <button class="button" type="submit">Send message</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer wrap">
-        <div class="footer-top">
-            <p class="footer-name">Fariba Rahnavard<span lang="fa" dir="rtl">فریبا رهنورد</span></p>
-            <ul class="footer-nav ui">
+    <footer class="site-footer">
+        <figure class="footer-photo">
+            <img src="img/2.jpg" width="872" height="1280" loading="lazy" alt="Detail of Disaster Never Rests: a child asleep beneath a hooded figure.">
+        </figure>
+        <div class="footer-menu">
+            <a class="wordmark" href="index.html">Fariba Rahnavard</a>
+            <ul class="footer-links">
                 <li><a href="buying.html">Works</a></li>
-                <li><a href="index.html#exhibitions">Exhibitions</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
                 <li><a href="port.html">CV &amp; writing</a></li>
-                <li><a href="https://www.instagram.com/fariba_rahnavard/" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>© <span data-year>2026</span> Fariba Rahnavard. All rights reserved.</p>
-            <p>Website by Mohsen Rahnavard</p>
+            <div class="footer-blocks">
+                <div>
+                    <h2>Contact</h2>
+                    <ul><li><a class="link" href="#contact">Send a message</a></li></ul>
+                </div>
+                <div>
+                    <h2>Follow</h2>
+                    <ul>
+                        <li><a class="link" href="https://www.instagram.com/fariba_rahnavard/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a class="link" href="https://www.facebook.com/fariba.rahnavardd" target="_blank" rel="noopener">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="legal">© <span data-year>2026</span> Fariba Rahnavard. All rights reserved. Website by Mohsen Rahnavard.</p>
         </div>
     </footer>
 </body>

@@ -2,3 +2,6 @@
 .claude/
 .agents/
 skills-lock.json
+
+# Design skill working files
+.taste-skill/
