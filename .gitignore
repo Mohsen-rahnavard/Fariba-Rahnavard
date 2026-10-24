@@ -1,0 +1,4 @@
+# Local Claude Code skills, not part of the website
+.claude/
+.agents/
+skills-lock.json
