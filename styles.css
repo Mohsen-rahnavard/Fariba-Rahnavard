@@ -1,13 +1,13 @@
 /* ---------- Tokens ---------- */
 
 :root {
-    --bg: #fbfaf7;
-    --surface: #f1eee8;
-    --mat: #e6e1d8;
+    --bg: #f5f0e6;
+    --surface: #ede6da;
+    --mat: #e3dbcd;
     --ink: #1f1b16;
     --muted: #6f675c;
     --accent: #7a4a1e;
-    --accent-ink: #fbfaf7;
+    --accent-ink: #f5f0e6;
     --accent-light: #d8a46a;
     --sold: #b3261e;
 
@@ -26,6 +26,15 @@
 
     --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+    /* Textures: kept faint so they read as paper and canvas, not pattern */
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .12 0 0 0 0 .1 0 0 0 0 .08 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --weave:
+        repeating-linear-gradient(0deg, rgb(31 27 22 / 0.022) 0 1px, transparent 1px 5px),
+        repeating-linear-gradient(90deg, rgb(31 27 22 / 0.018) 0 1px, transparent 1px 5px);
+    --hatch: repeating-linear-gradient(135deg, rgb(122 74 30 / 0.045) 0 1px, transparent 1px 16px);
+    --dots: radial-gradient(circle, rgb(31 27 22 / 0.11) 0.9px, transparent 1.4px) 0 0 / 22px 22px;
+    --wash: radial-gradient(ellipse 70% 60% at 0% 100%, rgb(216 164 106 / 0.13), transparent 70%);
 
     color-scheme: light;
 }
@@ -46,7 +55,7 @@ html {
 body {
     margin: 0;
     overflow-x: clip;
-    background: var(--bg);
+    background: var(--grain), var(--bg);
     color: var(--ink);
     font-family: var(--font);
     font-size: var(--size-body);
@@ -261,7 +270,7 @@ p {
     display: grid;
     align-content: end;
     padding: calc(var(--margin) + 72px) var(--margin) var(--margin);
-    background: var(--surface);
+    background: var(--grain), var(--weave), var(--surface);
     clip-path: inset(0);
     transition: clip-path 500ms var(--ease-in-out);
 }
@@ -418,6 +427,7 @@ body:not(.menu-open) .menu-panel {
     align-items: center;
     gap: var(--margin);
     padding: calc(var(--size-display) + 64px) var(--margin) calc(var(--size-display) + 40px);
+    background: var(--wash);
 }
 
 .hero-copy {
@@ -525,7 +535,7 @@ body:not(.menu-open) .menu-panel {
 /* ---------- Home: series index with a changing preview ---------- */
 
 .series {
-    background: var(--surface);
+    background: var(--grain), var(--weave), var(--surface);
 }
 
 .series-layout {
@@ -681,7 +691,7 @@ body:not(.menu-open) .menu-panel {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: var(--margin);
-    background: var(--surface);
+    background: var(--grain), var(--hatch), var(--surface);
 }
 
 .about-title {
@@ -851,7 +861,7 @@ body:not(.menu-open) .menu-panel {
 .study > div {
     grid-column: span 6;
     padding: 32px;
-    background: var(--ink);
+    background: var(--grain), #73665b;
     color: var(--bg);
 }
 
@@ -942,6 +952,22 @@ body:not(.menu-open) .menu-panel {
 
 /* ---------- Contact: a letter to the artist ---------- */
 
+/* Faint contour lines rising from one corner, fading before the form */
+#contact {
+    position: relative;
+    isolation: isolate;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: repeating-radial-gradient(circle at 92% 8%, transparent 0 38px, rgb(122 74 30 / 0.09) 38px 39px);
+    mask-image: radial-gradient(circle at 92% 8%, #000, transparent 55%);
+    pointer-events: none;
+}
+
 .letter-inner {
     max-width: 40rem;
     margin-inline: auto;
@@ -1027,7 +1053,7 @@ body:not(.menu-open) .menu-panel {
     padding: 12px 14px;
     border: 1px solid #d3ccc0;
     border-radius: 0;
-    background: #fff;
+    background: #fbf8f2;
     color: var(--ink);
     font: 400 var(--size-body) / 1.5 var(--font);
     transition: border-color 200ms ease;
@@ -1096,7 +1122,7 @@ body:not(.menu-open) .menu-panel {
     display: grid;
     grid-template-columns: minmax(0, min(50%, 872px)) minmax(0, 1fr);
     min-height: 100svh;
-    background: var(--surface);
+    background: var(--grain), var(--dots), var(--surface);
 }
 
 .footer-photo {
@@ -1192,6 +1218,19 @@ body:not(.menu-open) .menu-panel {
     gap: var(--margin);
     align-items: end;
     padding-block: clamp(48px, 8vw, 120px) clamp(40px, 5vw, 72px);
+    position: relative;
+    isolation: isolate;
+}
+
+/* A dot grid under the title that thins out toward the content */
+.page-head::before {
+    content: "";
+    position: absolute;
+    inset: 0 calc(var(--margin) * -1);
+    z-index: -1;
+    background: var(--dots);
+    mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    pointer-events: none;
 }
 
 .page-head h1 {
