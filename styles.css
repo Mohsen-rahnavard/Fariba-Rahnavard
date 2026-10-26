@@ -1,9 +1,9 @@
 /* ---------- Tokens ---------- */
 
 :root {
-    --bg: #b8bab4;
-    --surface: #e7e7eb;
-    --mat: #e7e7eb;
+    --bg: #a8aaa4;
+    --surface: #d7d7db;
+    --mat: #d7d7db;
     --ink: #202a26;
     --muted: #2a3437;
     --accent: #515952;
@@ -34,16 +34,16 @@
         repeating-linear-gradient(90deg, rgb(32 42 38 / 0.018) 0 1px, transparent 1px 5px);
     --hatch: repeating-linear-gradient(135deg, rgb(81 89 82 / 0.045) 0 1px, transparent 1px 16px);
     --dots: radial-gradient(circle, rgb(32 42 38 / 0.11) 0.9px, transparent 1.4px) 0 0 / 22px 22px;
-    --wash: radial-gradient(ellipse 70% 60% at 0% 100%, rgb(184 186 180 / 0.13), transparent 70%);
+    --wash: radial-gradient(ellipse 70% 60% at 0% 100%, rgb(168 170 164 / 0.13), transparent 70%);
 
     color-scheme: light;
 }
 
 .series,
 .about {
-    --bg: #2a3437;
-    --surface: #2a3437;
-    --mat: #b8bab4;
+    --bg: #1e282a;
+    --surface: #1e282a;
+    --mat: #a8aaa4;
     --ink: #e7e7eb;
     --muted: #b8bab4;
     --accent: #b8bab4;
@@ -52,9 +52,9 @@
 }
 
 .site-footer {
-    --bg: #202a26;
-    --surface: #202a26;
-    --mat: #515952;
+    --bg: #141e1a;
+    --surface: #141e1a;
+    --mat: #444b45;
     --ink: #e7e7eb;
     --muted: #b8bab4;
     --accent: #b8bab4;
@@ -63,9 +63,9 @@
 }
 
 .buying {
-    --bg: #e7e7eb;
-    --surface: #b8bab4;
-    --mat: #b8bab4;
+    --bg: #d7d7db;
+    --surface: #a8aaa4;
+    --mat: #a8aaa4;
 }
 
 /* ---------- Base ---------- */
@@ -895,7 +895,7 @@ body:not(.menu-open) .menu-panel {
 .study > div {
     grid-column: span 6;
     padding: 32px;
-    background: var(--grain), #515952;
+    background: var(--grain), #444b45;
     color: var(--bg);
 }
 
@@ -1482,7 +1482,7 @@ body:not(.menu-open) .menu-panel {
     margin: 0;
     padding: 0;
     border: 0;
-    background: var(--ink);
+    background: #d7d7db;
     color: var(--bg);
     --ink: #e7e7eb;
     --muted: #b8bab4;
@@ -1496,7 +1496,7 @@ body:not(.menu-open) .menu-panel {
 }
 
 .viewer::backdrop {
-    background: #202a26;
+    background: #141e1a;
 }
 
 @keyframes viewer-in {
@@ -1530,7 +1530,7 @@ body:not(.menu-open) .menu-panel {
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
-    background: #2a3437;
+    background: #1e282a;
 }
 
 .viewer-bar {
