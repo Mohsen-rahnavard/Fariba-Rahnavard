@@ -4,10 +4,10 @@
     --bg: #a8aaa4;
     --surface: #d7d7db;
     --mat: #d7d7db;
-    --ink: #202a26;
-    --muted: #2a3437;
-    --accent: #515952;
-    --accent-ink: #e7e7eb;
+    --ink: #1b1d1c;
+    --muted: #222628;
+    --accent: #393b3a;
+    --accent-ink: #cacaca;
     --accent-light: #b8bab4;
     --sold: #b3261e;
 
@@ -41,8 +41,8 @@
 
 .series,
 .about {
-    --bg: #1e282a;
-    --surface: #1e282a;
+    --bg: #191e1f;
+    --surface: #1f2425;
     --mat: #a8aaa4;
     --ink: #e7e7eb;
     --muted: #b8bab4;
@@ -52,13 +52,13 @@
 }
 
 .site-footer {
-    --bg: #141e1a;
-    --surface: #141e1a;
+    --bg: #1b1f1d;
+    --surface: #101212;
     --mat: #444b45;
     --ink: #e7e7eb;
     --muted: #b8bab4;
     --accent: #b8bab4;
-    --accent-ink: #202a26;
+    --accent-ink: #2c2f2e;
     color: var(--ink);
 }
 
@@ -895,7 +895,7 @@ body:not(.menu-open) .menu-panel {
 .study > div {
     grid-column: span 6;
     padding: 32px;
-    background: var(--grain), #444b45;
+    background: var(--grain), #202020;
     color: var(--bg);
 }
 
@@ -1496,7 +1496,7 @@ body:not(.menu-open) .menu-panel {
 }
 
 .viewer::backdrop {
-    background: #141e1a;
+    background: #1d2320;
 }
 
 @keyframes viewer-in {
