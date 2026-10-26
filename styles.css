@@ -1,14 +1,14 @@
 /* ---------- Tokens ---------- */
 
 :root {
-    --bg: #f5f0e6;
-    --surface: #ede6da;
-    --mat: #e3dbcd;
-    --ink: #1f1b16;
-    --muted: #6f675c;
-    --accent: #7a4a1e;
-    --accent-ink: #f5f0e6;
-    --accent-light: #d8a46a;
+    --bg: #b8bab4;
+    --surface: #e7e7eb;
+    --mat: #e7e7eb;
+    --ink: #202a26;
+    --muted: #2a3437;
+    --accent: #515952;
+    --accent-ink: #e7e7eb;
+    --accent-light: #b8bab4;
     --sold: #b3261e;
 
     --font: "Vazirmatn", system-ui, sans-serif;
@@ -28,15 +28,44 @@
     --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 
     /* Textures: kept faint so they read as paper and canvas, not pattern */
-    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .12 0 0 0 0 .1 0 0 0 0 .08 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .13 0 0 0 0 .16 0 0 0 0 .15 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     --weave:
-        repeating-linear-gradient(0deg, rgb(31 27 22 / 0.022) 0 1px, transparent 1px 5px),
-        repeating-linear-gradient(90deg, rgb(31 27 22 / 0.018) 0 1px, transparent 1px 5px);
-    --hatch: repeating-linear-gradient(135deg, rgb(122 74 30 / 0.045) 0 1px, transparent 1px 16px);
-    --dots: radial-gradient(circle, rgb(31 27 22 / 0.11) 0.9px, transparent 1.4px) 0 0 / 22px 22px;
-    --wash: radial-gradient(ellipse 70% 60% at 0% 100%, rgb(216 164 106 / 0.13), transparent 70%);
+        repeating-linear-gradient(0deg, rgb(32 42 38 / 0.022) 0 1px, transparent 1px 5px),
+        repeating-linear-gradient(90deg, rgb(32 42 38 / 0.018) 0 1px, transparent 1px 5px);
+    --hatch: repeating-linear-gradient(135deg, rgb(81 89 82 / 0.045) 0 1px, transparent 1px 16px);
+    --dots: radial-gradient(circle, rgb(32 42 38 / 0.11) 0.9px, transparent 1.4px) 0 0 / 22px 22px;
+    --wash: radial-gradient(ellipse 70% 60% at 0% 100%, rgb(184 186 180 / 0.13), transparent 70%);
 
     color-scheme: light;
+}
+
+.series,
+.about {
+    --bg: #2a3437;
+    --surface: #2a3437;
+    --mat: #b8bab4;
+    --ink: #e7e7eb;
+    --muted: #b8bab4;
+    --accent: #b8bab4;
+    --accent-ink: #202a26;
+    color: var(--ink);
+}
+
+.site-footer {
+    --bg: #202a26;
+    --surface: #202a26;
+    --mat: #515952;
+    --ink: #e7e7eb;
+    --muted: #b8bab4;
+    --accent: #b8bab4;
+    --accent-ink: #202a26;
+    color: var(--ink);
+}
+
+.buying {
+    --bg: #e7e7eb;
+    --surface: #b8bab4;
+    --mat: #b8bab4;
 }
 
 /* ---------- Base ---------- */
@@ -835,7 +864,12 @@ body:not(.menu-open) .menu-panel {
     line-height: 1.2;
 }
 
-.tag--solo {
+.year-group:nth-child(odd) .tag {
+    background: var(--bg);
+}
+
+.tag--solo,
+.year-group:nth-child(odd) .tag--solo {
     background: var(--ink);
     color: var(--bg);
 }
@@ -861,7 +895,7 @@ body:not(.menu-open) .menu-panel {
 .study > div {
     grid-column: span 6;
     padding: 32px;
-    background: var(--grain), #73665b;
+    background: var(--grain), #515952;
     color: var(--bg);
 }
 
@@ -963,7 +997,7 @@ body:not(.menu-open) .menu-panel {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: repeating-radial-gradient(circle at 92% 8%, transparent 0 38px, rgb(122 74 30 / 0.09) 38px 39px);
+    background: repeating-radial-gradient(circle at 92% 8%, transparent 0 38px, rgb(81 89 82 / 0.09) 38px 39px);
     mask-image: radial-gradient(circle at 92% 8%, #000, transparent 55%);
     pointer-events: none;
 }
@@ -1021,7 +1055,7 @@ body:not(.menu-open) .menu-panel {
 
 @media (hover: hover) and (pointer: fine) {
     .topic span:hover {
-        background: var(--mat);
+        background: var(--bg);
     }
 }
 
@@ -1051,9 +1085,9 @@ body:not(.menu-open) .menu-panel {
     width: 100%;
     min-height: 52px;
     padding: 12px 14px;
-    border: 1px solid #d3ccc0;
+    border: 1px solid #515952;
     border-radius: 0;
-    background: #fbf8f2;
+    background: var(--bg);
     color: var(--ink);
     font: 400 var(--size-body) / 1.5 var(--font);
     transition: border-color 200ms ease;
@@ -1283,7 +1317,7 @@ body:not(.menu-open) .menu-panel {
 
 @media (hover: hover) and (pointer: fine) {
     .chip:hover {
-        background: var(--mat);
+        background: var(--bg);
     }
 }
 
@@ -1450,9 +1484,9 @@ body:not(.menu-open) .menu-panel {
     border: 0;
     background: var(--ink);
     color: var(--bg);
-    --ink: #fbfaf7;
-    --muted: #c9c0b2;
-    --accent: #d8a46a;
+    --ink: #e7e7eb;
+    --muted: #b8bab4;
+    --accent: #b8bab4;
 }
 
 .viewer[open] {
@@ -1462,7 +1496,7 @@ body:not(.menu-open) .menu-panel {
 }
 
 .viewer::backdrop {
-    background: #1f1b16;
+    background: #202a26;
 }
 
 @keyframes viewer-in {
@@ -1496,7 +1530,7 @@ body:not(.menu-open) .menu-panel {
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
-    background: #2a251e;
+    background: #2a3437;
 }
 
 .viewer-bar {
@@ -1542,8 +1576,8 @@ body:not(.menu-open) .menu-panel {
     min-height: 44px;
     padding: 0 1rem;
     border: 0;
-    background: #3a332a;
-    color: #fbfaf7;
+    background: #515952;
+    color: #e7e7eb;
     font: 600 var(--size-small) / 1 var(--font);
     cursor: pointer;
     transition: background-color 200ms ease, transform 160ms var(--ease-out);
@@ -1555,7 +1589,7 @@ body:not(.menu-open) .menu-panel {
 
 @media (hover: hover) and (pointer: fine) {
     .viewer button:hover {
-        background: #4a4136;
+        background: #202a26;
     }
 }
 
@@ -1682,7 +1716,7 @@ body:not(.menu-open) .menu-panel {
 
 @media (hover: hover) and (pointer: fine) {
     .essay-index a:hover {
-        background: var(--mat);
+        background: var(--bg);
     }
 }
 
